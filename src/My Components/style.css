@@ -1,0 +1,174 @@
+
+
+.picture
+{
+        width: 100px;
+        height: 100px;
+        border-radius:50px;
+}
+
+.sideNavbar
+{
+    
+    width: 330px;
+    height: 700px;
+    border-right: 1px solid rgb(191, 183, 183);
+}
+
+.picMainDiv
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    /* margin: 40px 0px 10px 0px; */
+    
+}
+.button
+{
+    background-color:rgb(199, 201, 214);
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 5px;
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+}
+.app
+{
+    
+    display: flex;
+    width: 100%;
+}
+.header
+{
+    background-color: #e62e63;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    border-bottom-right-radius: 250px 250px;
+    color: white;
+}
+.days
+{
+    width: 100%;
+}
+.important
+{
+  
+    width: 100%;
+    
+}
+.doneTask
+{
+  
+    width: 100%;
+  
+}
+.comingTask
+{
+  
+    width: 100%;
+  
+}
+.newTask
+{
+    width: 100%;
+}
+
+.label
+{
+    color: #e62e63;
+}
+
+
+.todoItems
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.outer-card
+{
+    width:800px;
+    height:auto;
+    display:flex;
+    align-items:center;
+    margin:4px;
+    
+}
+.card
+{
+    width: 100%;
+    background-color:rgb(199, 201, 214);
+    border:0px;
+}
+.dotedBorder
+{
+    border-bottom: dotted;
+    display: flex;
+    justify-content: space-between;
+}
+.card-title
+{
+    font-weight:600;
+}
+.card-text
+{
+    color:rgb(35, 46, 116);
+}
+.iconDiv
+{
+    display:flex;
+    justify-content:space-between;
+}
+.inerDiv
+{
+    display:flex; 
+    justify-Content:center;
+}
+#heartIcon
+{
+    position:relative;
+     background:transparent;
+     border:none;
+     outline:none;
+     color:grey;
+}
+.closeDiv i
+{
+    opacity: 0;
+}
+.outer-card:hover
+.closeDiv i
+{
+    opacity: 1;
+  
+}
+.outer-card:hover
+{
+    transform: translateY(5px);
+    transition:all 0.5s ease-out;
+   
+}
+.outer-card:hover
+.card
+{
+    background-color:#d85177;
+    color: white;
+}
+
+.button:active,
+.button:focus
+{
+    border-left: 5px solid #e62e63;
+    
+}
+
+
+
+ 
+        
