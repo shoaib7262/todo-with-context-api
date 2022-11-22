@@ -11,9 +11,7 @@ import { createContext } from "react";
 import { useState } from "react";
 
 const allData = createContext();
-const daysData = createContext();
-const deletData = createContext();
-const importantData = createContext();
+
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -42,10 +40,10 @@ function App() {
 
   return (
     <>
-      <allData.Provider value={{ addTasks }}>
-        <daysData.Provider value={tasks}>
-          <deletData.Provider value={{ deletItem }}>
-            <importantData.Provider value={{ importantIcon }}>
+      <allData.Provider value={{ tasks, addTasks ,deletItem, importantIcon}}>
+      
+          
+            
               <Router>
                 <div className="app">
                   <SideNavbar />
@@ -59,9 +57,9 @@ function App() {
                   </Routes>
                 </div>
               </Router>
-            </importantData.Provider>
-          </deletData.Provider>
-        </daysData.Provider>
+            
+          
+          
       </allData.Provider>
     </>
   );
@@ -69,6 +67,4 @@ function App() {
 
 export default App;
 export { allData };
-export { daysData };
-export { deletData };
-export { importantData };
+

@@ -1,13 +1,16 @@
 import React, { useContext } from "react";
 import Header from "./Header";
-import { daysData } from "../App";
-import { deletData } from "../App";
-import { importantData } from "../App";
+import { allData } from "../App";
+
+
 
 const MyDay = () => {
-  const todoItem = useContext(daysData);
-  const { deletItem } = useContext(deletData);
-  const { importantIcon } = useContext(importantData);
+  
+  
+  const  { tasks, deletItem, importantIcon } = useContext(allData);
+  // const { importantIcon } = useContext(importantData);
+
+
 
   const onDelet = (id) => {
     deletItem(id);
@@ -20,7 +23,7 @@ const MyDay = () => {
   return (
     <div className="todoItems">
       <Header name="My Day" />
-      {todoItem.map((item, id) => {
+      {tasks.map((item, id) => {
         return (
           <div key={item.id}>
             <div className="outer-card mx-2 my-2">

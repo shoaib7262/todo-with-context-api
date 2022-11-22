@@ -1,17 +1,18 @@
 import React, { useContext } from "react";
 import Header from "./Header";
-import { daysData } from "../App";
-import { deletData } from "../App";
+import { allData } from "../App";
+
+
 
 const Important = () => {
-  const filterImportant = useContext(daysData);
-  const { deletItem } = useContext(deletData);
+
+  const {tasks, deletItem } = useContext(allData);
 
   const onDelet = (id) => {
     deletItem(id);
   };
 
-  let impItems = filterImportant.filter((item) => item.liked === true);
+  let impItems = tasks.filter((item) => item.liked === true);
 
   return (
     <div className="important">

@@ -15,6 +15,8 @@ const InputForm = () => {
       liked: false,
     };
     addTasks(data);
+    setTitle('');
+    setDiscription('');
   };
 
   return (
